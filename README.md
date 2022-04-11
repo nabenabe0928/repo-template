@@ -1,13 +1,15 @@
 # A repository template
 
-[![Build Status](https://github.com/nabenabe0928/repo-template/workflows/Functionality%20test/badge.svg?branch=main)](https://github.com/automl/molib)
-[![codecov](https://codecov.io/gh/nabenabe0928/repo-template/branch/main/graph/badge.svg?token=UXC2K5VJNN)](https://codecov.io/gh/automl/molib)
+[![Build Status](https://github.com/nabenabe0928/repo-template/workflows/Functionality%20test/badge.svg?branch=main)](https://github.com/nabenabe0928/repo-template)
+[![codecov](https://codecov.io/gh/nabenabe0928/repo-template/branch/main/graph/badge.svg?token=FQWPWEJSWE)](https://codecov.io/gh/nabenabe0928/repo-template)
 
 Before copying the repository, please make sure to change the following parts:
 1. The name of the `repo_name` directory
 2. `include` in `.coveragerc`
-3. The URLs to `Build Status` and `codecov` in `README.md`
-4. The token of `codecov.yml`
-5. `Copyright` in `LICENSE`
-6. `name`, `author`, `author email`, and `url` in `setup.py`
-7. Modify `.pre-commit-config.yml`
+3. The URLs to `Build Status` and `codecov` (we need to copy from the `codecov` website) in `README.md`
+4. Setting up the `codecov` of the repository
+5. The token of `codecov.yml`
+6. `Copyright` in `LICENSE`
+7. `name`, `author`, `author email`, and `url` in `setup.py`
+8. The targets of `.pre-commit-config.yaml`
+9. `--cov=<target>` in Line 46 of `python-app.yml` (if there are multiple targets, use `--cov=<target 1> --cov=<target 2> ...`)
