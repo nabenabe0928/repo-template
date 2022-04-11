@@ -13,3 +13,12 @@ Before copying the repository, please make sure to change the following parts:
 7. `name`, `author`, `author email`, and `url` in `setup.py`
 8. The targets of `.pre-commit-config.yaml`
 9. `--cov=<target>` in Line 46 of `python-app.yml` (if there are multiple targets, use `--cov=<target 1> --cov=<target 2> ...`)
+10. `target` in `check_github_actions_locally.sh`
+
+## Local check
+
+In order to check if the codebase passes Github actions, run the following:
+
+```shell
+$ ./check_github_actions_locally.sh
+```
