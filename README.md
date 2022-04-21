@@ -11,7 +11,7 @@ Before copying the repository, please make sure to change the following parts:
 5. The token of `codecov.yml`
 6. `Copyright` in `LICENSE`
 7. `name`, `author`, `author email`, and `url` in `setup.py`
-8. The targets of `.pre-commit-config.yaml`
+8. The targets of `.pre-commit-config.yaml` (Lines 8, 14)
 9. `--cov=<target>` in Line 46 of `python-app.yml` (if there are multiple targets, use `--cov=<target 1> --cov=<target 2> ...`)
 10. `target` in `check_github_actions_locally.sh`
 
@@ -20,5 +20,6 @@ Before copying the repository, please make sure to change the following parts:
 In order to check if the codebase passes Github actions, run the following:
 
 ```shell
+$ pip install black pytest unittest flake8 pre-commit pytest-cov
 $ ./check_github_actions_locally.sh
 ```
