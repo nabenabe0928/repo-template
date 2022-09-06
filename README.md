@@ -14,6 +14,7 @@ Before copying the repository, please make sure to change the following parts:
 8. The targets of `.pre-commit-config.yaml` (Lines 8, 14)
 9. `--cov=<target>` in Line 46 of `python-app.yml` (if there are multiple targets, use `--cov=<target 1> --cov=<target 2> ...`)
 10. `target` in `check_github_actions_locally.sh`
+11. Edit `__init__.py`
 
 ## Local check
 
