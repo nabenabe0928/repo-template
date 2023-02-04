@@ -18,5 +18,8 @@
     "restructuredtext.languageServer.disabled": true,
     "files.watcherExclude": {
         "**/results/**": true
-    }
+    },
+    "editor.rulers": [
+        120
+    ],
 }
