@@ -15,7 +15,7 @@ setuptools.setup(
     url="https://github.com/nabenabe0928/repo-template",
     packages=setuptools.find_packages(),
     python_requires=">=3.8",
-    platforms=["Linux"],
+    platforms=["Linux", "Darwin"],
     install_requires=requirements,
     include_package_data=True,
 )
