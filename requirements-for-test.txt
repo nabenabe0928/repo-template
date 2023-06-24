@@ -1,6 +1,7 @@
 # For package
 
 # For local check
+pre-commit
 pytest-cov
 pytest
 flake8
