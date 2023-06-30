@@ -1,4 +1,4 @@
-name: Functionality test
+name: Python Test
 
 on:
   push:
@@ -45,7 +45,7 @@ jobs:
         if [ ${{ matrix.code-cov }} ]; then
           codecov='--cov=repo_name --cov-report=xml  --cov-config=.coveragerc';
         fi
-        python -m pytest -W ignore -v $codecov test
+        python -m pytest -W ignore -v $codecov tests
     - name: Upload coverage
       if: matrix.code-cov && always()
       uses: codecov/codecov-action@v1
